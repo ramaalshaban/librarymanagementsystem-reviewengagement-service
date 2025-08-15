@@ -1,0 +1,476 @@
+{
+  "info": {
+    "name": "librarymanagementsystem-reviewengagement-service API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "getReview",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//reviews/:reviewId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "reviews",
+            ":reviewId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createReview",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"bookId\": \"ID\",\n  \"rating\": \"Short\",\n  \"reviewText\": \"Text\",\n  \"status\": \"Enum\",\n  \"moderatedByUserId\": \"ID\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//reviews",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "reviews"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateReview",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"rating\": \"Short\",\n  \"reviewText\": \"Text\",\n  \"status\": \"Enum\",\n  \"moderatedByUserId\": \"ID\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//reviews/:reviewId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "reviews",
+            ":reviewId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteReview",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//reviews/:reviewId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "reviews",
+            ":reviewId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listReviews",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//reviews",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "reviews"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getRecommendation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//recommendations/:recommendationId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "recommendations",
+            ":recommendationId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createRecommendation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"bookIds\": \"ID\",\n  \"generatedBy\": \"String\",\n  \"contextInfo\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//recommendations",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "recommendations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateRecommendation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"bookIds\": \"ID\",\n  \"generatedBy\": \"String\",\n  \"contextInfo\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//recommendations/:recommendationId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "recommendations",
+            ":recommendationId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteRecommendation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//recommendations/:recommendationId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "recommendations",
+            ":recommendationId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listRecommendations",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//recommendations",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "recommendations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getEngagementEvent",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//engagementevents/:engagementEventId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "engagementevents",
+            ":engagementEventId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "createEngagementEvent",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"userId\": \"ID\",\n  \"eventType\": \"String\",\n  \"eventTime\": \"Date\",\n  \"details\": \"Object\",\n  \"bookId\": \"ID\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//engagementevents",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "engagementevents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateEngagementEvent",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"details\": \"Object\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{serviceUrl}}//engagementevents/:engagementEventId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "engagementevents",
+            ":engagementEventId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteEngagementEvent",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//engagementevents/:engagementEventId",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "engagementevents",
+            ":engagementEventId"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listEngagementEvents",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "ExampleValue",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{serviceUrl}}//engagementevents",
+          "host": [
+            "{{serviceUrl}}"
+          ],
+          "path": [
+            "engagementevents"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
